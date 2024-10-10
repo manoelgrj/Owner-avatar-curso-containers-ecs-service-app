@@ -27,6 +27,8 @@ echo "TERRAFORM - CI"
 
 cd ../terraform
 
+terraform init -backend-config=environment/$BRANCH_NAME/backend.tfvars
+
 #echo "TERRAFORM - FORMAT CHECK"
 #terraform fmt --recursive --check
 
