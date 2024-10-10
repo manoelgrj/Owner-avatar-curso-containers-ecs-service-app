@@ -6,7 +6,7 @@ set -e
 export AWS_ACCOUNT="195275651153"
 export AWS_PAGER=""
 export APP_NAME="linuxtips-app"
-export BRANCH_NAME="dev"
+export BRANCH_NAME="main"
 export CLUSTER_NAME="linuxtips-ecs-cluster"
 
 # CI DA APP
@@ -29,8 +29,8 @@ cd ../terraform
 
 terraform init -backend-config=environment/$BRANCH_NAME/backend.tfvars
 
-#echo "TERRAFORM - FORMAT CHECK"
-#terraform fmt --recursive --check
+echo "TERRAFORM - FORMAT CHECK"
+terraform fmt --recursive --check
 
 echo "TERRAFORM - VALIDATE"
 terraform validate
