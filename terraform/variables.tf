@@ -88,3 +88,6 @@ variable "scale_tracking_cpu" {}
 
 ### Tracking Request
 variable "scale_tracking_requests" {}
+
+### Service Discovery
+variable "ssm_service_discovery_namespace" {}
