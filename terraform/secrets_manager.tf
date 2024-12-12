@@ -1,5 +1,5 @@
 resource "aws_secretsmanager_secret" "teste" {
-  name = format("%s-v4-secret-exemplos", var.service_name)
+  name = format("%s-v5-secret-exemplos", var.service_name)
 }
 
 resource "aws_secretsmanager_secret_version" "teste" {
